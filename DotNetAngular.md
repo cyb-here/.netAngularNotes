@@ -55,6 +55,10 @@
 
     -  useImperativeHandle() – Customizes the instance value exposed to parent via ref
 11.  Explain Strict Mode in React.
+- **Detects side effects** by intentionally double-invoking lifecycle methods like `useEffect()` and constructors.
+- **Warns about deprecated APIs** and unsafe lifecycle methods (`componentWillMount`, etc.).
+- **Highlights unexpected behavior** in components to help future-proof your code.
+- **No impact on production** — it’s stripped out during the build process.
 
 12. How to iterate/loop through all p elements in jquery
 $("p").each(function() { 
@@ -71,14 +75,10 @@ Collections offer dynamic sizing, rich APIs, and flexible data structures.
 1. Non-Generic Collections (in System.Collections)
 Store objects as object type (boxing/unboxing overhead).
 
-Examples:
-
-ArrayList – dynamic array of objects
-
-Hashtable – key-value pairs (non-generic)
-
-Stack – LIFO collection
-
+Examples:  
+ArrayList – dynamic array of objects  
+Hashtable – key-value pairs (non-generic)  
+Stack – LIFO collection  
 Queue – FIFO collection
 
 2. Generic Collections (in System.Collections.Generic)
