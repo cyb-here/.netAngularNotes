@@ -1,5 +1,57 @@
+## CASTING - Implicit vs Explicit
+
+### 🔹 Implicit Casting (Type Conversion)
+Automatic type conversion performed by the compiler when there is no risk of data loss.
+- **Key Point:** Smaller → larger type (safe conversion).
+- **Example:**
+```csharp
+int num = 100;       // int (32-bit)
+double d = num;      // implicit casting: int → double
+Console.WriteLine(d); // prints 100
+```
+
+## 🔹 Explicit Casting
+
+**Definition:**  
+Manual type conversion using a cast operator or conversion methods.
+
+**Example:**
+```csharp
+double d = 9.78;     
+int num = (int)d;    // explicit casting: double → int
+Console.WriteLine(num); // prints 9 (fractional part lost)
+```
+
+## 🥊BOXING UNBOXING
+Boxing and unboxing are mechanisms to convert between value types (like int, struct) and reference types (object).
+-> Have huge performance impact due to frequent boxing unboxing.
+```csharp
+Boxing
+int num = 42;          // value type
+object obj = num;      // boxing: int → object
+Console.WriteLine(obj); // prints 42
+
+UNBOXING
+object obj = 42;       // boxed int
+int num = (int)obj;    // unboxing: object → int
+Console.WriteLine(num); // prints 42
+
+```
 
 
+## HEAP vs STACK
+STACK - Stores Primitive Data Types, Variable, Data, Memory location are at same location.
+HEAP - Stores Object with pointer
+
+## Garbage Collector
+Is a background process, And Cleans any **Unused & Managed Resources.**
+
+### IL Code - Intermediate Language Code, Partially Compiled  Code.  
+### JIT - Just In Time compiler - Converts IL code to Machine Code.
+
+![alt text]({D64DAE2B-7ECA-4973-B317-CD699F5B06EB}.png)
+
+IL Example
 # C# vs .Net Framwework
 ### C# - Programming Language Features (Syntaxes, Symentics, Loops, If Else)
 ### .NET - Framework Features such as [ Common Language Runtime (CLR), Liabraries, Garbage Collector. ]
