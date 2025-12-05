@@ -1,3 +1,21 @@
+## Abstract vs Interface
+Interfaces are Implemented, Abstract classes are inherited.
+Abstract is a half defined parent/base class.
+
+# Interface Segregation
+You create Different different methods so the clients to use unnecessary methods.
+
+# Interface is Contract
+- Everything in Interface is public, We cannot Define as well
+- Interface is a contract, by having a contract between creator and consumer we have better change management, better impact analysis control and better control on breaking changes.
+- Supports Multiple Inheritance
+
+# VIRTUAL & ABSTRACT & OVERRIDE
+- Abstract class & Abstract method Are VIRTUAL in behavour.
+- We cannot create instance of abstract class.
+- Its compulsary to implement abstract methods in child class.
+  
+
 # OOPS
 1. Abstration - Show only what is necessary (public, private, protected).
    - Happens during design phase.
